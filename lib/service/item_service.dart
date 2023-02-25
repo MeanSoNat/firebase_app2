@@ -19,7 +19,6 @@ class ItemService {
                 context,
                 "success",
                 "Added item to firestore",
-                // actions: [dismissButton(context)],
               )
             });
   }
@@ -35,7 +34,6 @@ class ItemService {
                 context,
                 "success",
                 "Save item($docid) to firestore",
-                // actions: [dismissButton(context)],
               )
             })
         .catchError((error) => {error.toString()});
@@ -52,7 +50,6 @@ class ItemService {
                 context,
                 "success",
                 "Delete item($docid)",
-                // actions: [dismissButton(context)],
               )
             });
   }
@@ -66,28 +63,4 @@ class ItemService {
       ),
     );
   }
-
-  // void showMessageBox(
-  //   BuildContext context,
-  //   String titleText,
-  //   String contentText,
-  // ) async {
-  //   try {
-  //     return showDialog(
-  //         barrierDismissible: false,
-  //         context: context,
-  //         builder: (BuildContext context) {
-  //           return AlertDialog(
-  //             shape: RoundedRectangleBorder(
-  //               borderRadius: BorderRadius.circular(20),
-  //             ),
-  //             title: Text(titleText),
-  //             content: Text(contentText),
-  //           );
-  //         });
-  //   } catch (e) {
-  //     print(e.toString());
-  //     return null;
-  //   }
-  // }
 }
